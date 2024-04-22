@@ -6,6 +6,6 @@ class UserService {
     final response = await http.get('/users');
     final List data = response.data;
 
-    return data.map((e) => User.fromJson(e)).toList();
+    return data.map((e) => User.fromJson(e)).toList(growable: false);
   }
 }

@@ -17,8 +17,6 @@ jobs:
         run: flutter --version
       - name: install
         run: flutter pub get
-      - name: generate
-        run: dart run build_runner build
       - name: format
         run: dart format --output=none --set-exit-if-changed .
       - name: analyze

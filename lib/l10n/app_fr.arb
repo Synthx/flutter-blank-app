@@ -1,4 +1,38 @@
 {
-  "mainTitle": "Accueil",
-  "mainAction": "Incrementer"
+  "@@locale": "fr",
+  "navigationHome": "Accueil",
+  "navigationCounter": "Compteur",
+  "homeTitle": "Bonjour {name}",
+  "@homeTitle": {
+    "placeholders": {
+      "name": {}
+    }
+  },
+  "homeDate": "Nous sommes le {date}",
+  "@homeDate": {
+    "placeholders": {
+      "date": {
+        "type": "DateTime",
+        "format": "yMMMEd"
+      }
+    }
+  },
+  "homePrice": "Le prix de cette application est de {price}",
+  "@homePrice": {
+    "placeholders": {
+      "price": {
+        "type": "double",
+        "format": "compactSimpleCurrency"
+      }
+    }
+  },
+  "counterActionIncrement": "Incrementer",
+  "counterActionDecrement": "Décrementer",
+  "counterActionLoad": "Charger une valeur (asynchrone)",
+  "counterValue": "{count, plural, zero{Aucun compteur} one{Le compteur vaut 1} other{Compteur : {count}}}",
+  "@counterValue": {
+    "placeholders": {
+      "count": {}
+    }
+  }
 }
