@@ -37,6 +37,7 @@ dart run build_runner build --delete-conflicting-outputs
 * Logging
 * Splash Screen
 * Crashlytics
+* Environment specific configuration
 
 ### Up-Coming features:
 
@@ -44,11 +45,12 @@ dart run build_runner build --delete-conflicting-outputs
 
 ### Libraries & Tools Used
 
-* [Http Client](https://github.com/flutterchina/dio)
-* [Routing](https://github.com/tekartik/sembast.dart)
-* [State Management](https://github.com/rrousselGit/provider)
-* [Json Serialization](https://github.com/dart-lang/json_serializable)
-* [Dependency Injection](https://github.com/fluttercommunity/get_it)
+* [Http Client](https://pub.dev/packages/dio)
+* [Routing](https://pub.dev/packages/go_router)
+* [State Management](https://pub.dev/packages/flutter_bloc)
+* [Json Serialization](https://pub.dev/packages/json_serializable)
+* [Code Generation](https://pub.dev/packages/freezed)
+* [Dependency Injection](https://pub.dev/packages/get_it)
 
 ### Folder Structure
 
@@ -78,6 +80,43 @@ Now, lets dive into the lib folder which has the main code for the application.
 7- routes.dart — This file contains all the routes for your application.
 8- main.dart - This is the starting point of the application. All the application level configurations are defined in this file i.e, theme, routes, title, orientation etc.
 ```
+
+### Code Generation
+
+This project use freezed for generating immutable classes, please use the following live templates :
+
+#### Immutable Object
+
+````dart
+import 'package:freezed_annotation/freezed_annotation.dart';
+
+part 'generated/$FILE_NAME$.freezed.dart';
+
+@freezed
+class $NAME$ with _$$$NAME$ {
+  const factory $NAME$({
+    $END$
+  }) = _$NAME$;
+}
+````
+
+#### Json Serializable Object
+
+````dart
+import 'package:freezed_annotation/freezed_annotation.dart';
+
+part 'generated/$FILE_NAME$.freezed.dart';
+part 'generated/$FILE_NAME$.g.dart';
+
+@freezed
+class $NAME$ with _$$$NAME$ {
+  const factory $NAME$({
+    $END$
+  }) = _$NAME$;
+  
+  factory $NAME$.fromJson(Map<String, Object?> json) => _$$$NAME$FromJson(json);
+}
+````
 
 ## Code quality
 

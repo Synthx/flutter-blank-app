@@ -1,0 +1,4 @@
+{
+  "env": "local",
+  "apiUrl": "https://jsonplaceholder.typicode.com"
+}

@@ -1,6 +1,14 @@
 targets:
   $default:
     builders:
+      freezed:
+        options:
+          build_extensions:
+            '^lib/{{dir}}/{{file}}.dart': 'lib/{{dir}}/generated/{{file}}.freezed.dart'
       json_serializable:
         options:
           generic_argument_factories: true
+      source_gen|combining_builder:
+        options:
+          build_extensions:
+            '^lib/{{dir}}/{{file}}.dart': 'lib/{{dir}}/generated/{{file}}.g.dart'
