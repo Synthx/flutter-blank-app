@@ -1,15 +1,27 @@
+import 'package:blank_app/data/data.dart';
 import 'package:dio/dio.dart';
 
 class HttpTokenInterceptor extends Interceptor {
-  String? _token;
+  final AuthService authService;
+
+  HttpTokenInterceptor({
+    required this.authService,
+  });
 
   @override
-  void onRequest(
+  Future<void> onRequest(
     RequestOptions options,
     RequestInterceptorHandler handler,
   ) async {
-    options.headers['Authorization'] = 'Bearer $_token';
+    if (options.headers.containsKey('no-auth')) {
+      return handler.next(options);
+    }
 
-    handler.next(options);
+    final token = await authService.getAuthToken();
+    if (token != null) {
+      options.headers['Authorization'] = 'Bearer $token';
+    }
+
+    return handler.next(options);
   }
 }

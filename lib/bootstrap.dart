@@ -1,10 +1,11 @@
 import 'package:blank_app/app.dart';
 import 'package:blank_app/core/core.dart';
+import 'package:blank_app/data/data.dart';
 import 'package:blank_app/store/store.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-Future<void> bootstrap(String env) async {
+Future<void> bootstrap(Env env) async {
   WidgetsFlutterBinding.ensureInitialized();
   Bloc.observer = StoreObserver();
 

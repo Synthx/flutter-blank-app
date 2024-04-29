@@ -14,6 +14,8 @@ void setupHttp() {
 
   http = Dio(options);
   http.interceptors
-    ..add(HttpTokenInterceptor())
+    ..add(HttpTokenInterceptor(
+      authService: getIt(),
+    ))
     ..add(HttpLoggingInterceptor());
 }

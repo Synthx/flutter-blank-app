@@ -4,4 +4,5 @@ export 'firebase.dart';
 export 'http/http.dart';
 export 'injector.dart';
 export 'locale.dart';
+export 'logging.dart';
 export 'logging_level.dart';
