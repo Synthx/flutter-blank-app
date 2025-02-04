@@ -18,7 +18,7 @@ ThemeData createThemeData({
       centerTitle: true,
       backgroundColor: background,
       surfaceTintColor: Colors.transparent,
-      shadowColor: Colors.black.withOpacity(0.4),
+      shadowColor: Colors.black.withValues(alpha: 0.4),
       elevation: 1,
       titleSpacing: kSpacer,
       titleTextStyle: TextStyle(
