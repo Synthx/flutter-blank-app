@@ -18,9 +18,9 @@ class MainScreen extends StatelessWidget {
   });
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(final BuildContext context) {
     return BlocProvider(
-      create: (context) => MainStore(
+      create: (final context) => MainStore(
         userService: getIt(),
       ),
       child: Scaffold(

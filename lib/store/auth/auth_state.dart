@@ -5,7 +5,7 @@ part 'generated/auth_state.freezed.dart';
 @freezed
 class AuthState with _$AuthState {
   const factory AuthState({
-    String? userId,
+    final String? userId,
   }) = _AuthState;
 }
 

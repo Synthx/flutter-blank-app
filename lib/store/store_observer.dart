@@ -3,7 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 
 class StoreObserver extends BlocObserver {
   @override
-  void onCreate(BlocBase bloc) {
+  void onCreate(final BlocBase bloc) {
     super.onCreate(bloc);
 
     Logging.info(
@@ -13,7 +13,7 @@ class StoreObserver extends BlocObserver {
   }
 
   @override
-  void onChange(BlocBase bloc, Change change) {
+  void onChange(final BlocBase bloc, final Change change) {
     super.onChange(bloc, change);
 
     Logging.info(
@@ -23,7 +23,8 @@ class StoreObserver extends BlocObserver {
   }
 
   @override
-  void onError(BlocBase bloc, Object error, StackTrace stackTrace) {
+  void onError(
+      final BlocBase bloc, final Object error, final StackTrace stackTrace) {
     Logging.severe(
       'Error encountered',
       name: bloc.runtimeType.toString(),

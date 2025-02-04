@@ -8,7 +8,7 @@ extension StringExtension on String {
   String toTitleCase() {
     return replaceAll(RegExp(' +'), ' ')
         .split(' ')
-        .map((str) => str.toCapitalized())
+        .map((final str) => str.toCapitalized())
         .join(' ');
   }
 }

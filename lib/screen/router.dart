@@ -9,12 +9,13 @@ final router = GoRouter(
   navigatorKey: _rootNavigatorKey,
   routes: [
     ShellRoute(
-      builder: (context, state, child) => Splash(
+      builder: (final context, final state, final child) => Splash(
         child: child,
       ),
       routes: [
         StatefulShellRoute.indexedStack(
-          builder: (context, state, navigationShell) => MainScreen(
+          builder: (final context, final state, final navigationShell) =>
+              MainScreen(
             navigationShell: navigationShell,
           ),
           branches: [
@@ -22,7 +23,7 @@ final router = GoRouter(
               routes: [
                 GoRoute(
                   path: '/',
-                  builder: (context, state) => const HomeScreen(),
+                  builder: (final context, final state) => const HomeScreen(),
                 ),
               ],
             ),
@@ -30,7 +31,8 @@ final router = GoRouter(
               routes: [
                 GoRoute(
                   path: '/counter',
-                  builder: (context, state) => const CounterScreen(),
+                  builder: (final context, final state) =>
+                      const CounterScreen(),
                 ),
               ],
             ),

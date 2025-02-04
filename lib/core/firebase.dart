@@ -6,12 +6,12 @@ Future setupFirebase() async {
   await Firebase.initializeApp();
 
   // framework errors
-  FlutterError.onError = (details) {
+  FlutterError.onError = (final details) {
     FirebaseCrashlytics.instance.recordFlutterFatalError(details);
   };
 
   // other errors
-  PlatformDispatcher.instance.onError = (error, stack) {
+  PlatformDispatcher.instance.onError = (final error, final stack) {
     FirebaseCrashlytics.instance.recordError(error, stack, fatal: true);
     return true;
   };

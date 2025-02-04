@@ -4,8 +4,8 @@ import 'package:blank_app/core/core.dart';
 
 class Logging {
   static void info(
-    String message, {
-    String name = '',
+    final String message, {
+    final String name = '',
   }) {
     developer.log(
       message,
@@ -16,10 +16,10 @@ class Logging {
   }
 
   static void severe(
-    String message, {
-    String name = '',
-    Object? error,
-    StackTrace? stackTrace,
+    final String message, {
+    final String name = '',
+    final Object? error,
+    final StackTrace? stackTrace,
   }) {
     developer.log(
       message,

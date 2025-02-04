@@ -10,8 +10,8 @@ class HttpTokenInterceptor extends Interceptor {
 
   @override
   Future<void> onRequest(
-    RequestOptions options,
-    RequestInterceptorHandler handler,
+    final RequestOptions options,
+    final RequestInterceptorHandler handler,
   ) async {
     if (options.headers.containsKey('no-auth')) {
       return handler.next(options);

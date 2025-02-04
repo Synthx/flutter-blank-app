@@ -5,8 +5,8 @@ part 'generated/main_state.freezed.dart';
 @freezed
 class MainState with _$MainState {
   const factory MainState({
-    required bool isLoading,
-    required int count,
+    required final bool isLoading,
+    required final int count,
   }) = _MainState;
 }
 

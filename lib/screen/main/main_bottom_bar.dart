@@ -10,7 +10,7 @@ class MainBottomBar extends StatelessWidget {
     super.key,
   });
 
-  void _onTap(int index) {
+  void _onTap(final int index) {
     navigationShell.goBranch(
       index,
       initialLocation: index == navigationShell.currentIndex,
@@ -18,9 +18,9 @@ class MainBottomBar extends StatelessWidget {
   }
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(final BuildContext context) {
     return BottomNavigationBar(
-      onTap: (index) => _onTap(index),
+      onTap: (final index) => _onTap(index),
       iconSize: 30,
       currentIndex: navigationShell.currentIndex,
       items: [

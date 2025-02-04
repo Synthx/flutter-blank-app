@@ -9,9 +9,9 @@ class BlankApp extends StatelessWidget {
   const BlankApp({super.key});
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(final BuildContext context) {
     return BlocProvider(
-      create: (context) => AuthStore(),
+      create: (final context) => AuthStore(),
       child: MaterialApp.router(
         title: 'Flutter blank app',
         debugShowCheckedModeBanner: false,

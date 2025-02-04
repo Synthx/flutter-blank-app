@@ -1,13 +1,12 @@
 import 'package:blank_app/core/core.dart';
 import 'package:blank_app/theme/theme.dart';
 import 'package:flutter/material.dart';
-import 'package:gap/gap.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(final BuildContext context) {
     final now = DateTime.now();
 
     return Scaffold(
@@ -18,6 +17,7 @@ class HomeScreen extends StatelessWidget {
         padding: const EdgeInsets.all(kSafeArea),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
+          spacing: kSpacer,
           children: [
             SizedBox(
               height: 150,
@@ -26,9 +26,7 @@ class HomeScreen extends StatelessWidget {
                 fit: BoxFit.contain,
               ),
             ),
-            const Gap(kSpacer),
             Text(context.t.homeTitle('Paul')),
-            const Gap(kSpacer),
             Text(context.t.homeDate(now)),
             Text(context.t.homePrice(2)),
           ],

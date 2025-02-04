@@ -7,9 +7,10 @@ part 'generated/config.g.dart';
 @freezed
 class Config with _$Config {
   const factory Config({
-    required Env env,
-    required String apiUrl,
+    required final Env env,
+    required final String apiUrl,
   }) = _Config;
 
-  factory Config.fromJson(Map<String, Object?> json) => _$ConfigFromJson(json);
+  factory Config.fromJson(final Map<String, Object?> json) =>
+      _$ConfigFromJson(json);
 }

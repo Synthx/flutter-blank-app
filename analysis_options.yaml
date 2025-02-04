@@ -9,4 +9,9 @@ analyzer:
 
 linter:
   rules:
+    prefer_const_constructors: true
+    prefer_const_declarations: true
+    prefer_if_elements_to_conditional_expressions: true
+    prefer_final_parameters: true
     prefer_single_quotes: true
+    use_string_buffers: true

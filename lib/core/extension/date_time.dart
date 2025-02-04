@@ -1,7 +1,7 @@
 import 'package:intl/intl.dart';
 
 extension DateTimeExtension on DateTime {
-  String format(String format) {
+  String format(final String format) {
     return DateFormat(format).format(this);
   }
 

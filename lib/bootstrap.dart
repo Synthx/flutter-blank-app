@@ -5,7 +5,7 @@ import 'package:blank_app/store/store.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-Future<void> bootstrap(Env env) async {
+Future<void> bootstrap(final Env env) async {
   WidgetsFlutterBinding.ensureInitialized();
   Bloc.observer = StoreObserver();
 

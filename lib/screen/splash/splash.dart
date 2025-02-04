@@ -13,14 +13,14 @@ class Splash extends StatelessWidget {
   });
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(final BuildContext context) {
     return BlocProvider(
-      create: (context) => SplashStore(
+      create: (final context) => SplashStore(
         authStore: context.read(),
       )..init(),
       child: BlocSelector<SplashStore, bool, bool>(
-        selector: (state) => state,
-        builder: (context, isLoading) {
+        selector: (final state) => state,
+        builder: (final context, final isLoading) {
           if (isLoading) {
             return const SplashScreen();
           }

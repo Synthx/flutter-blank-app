@@ -2,10 +2,10 @@ import 'package:blank_app/theme/theme.dart';
 import 'package:flutter/material.dart';
 
 ThemeData createThemeData({
-  required Color background,
-  required Color card,
-  required Color text,
-  required Color textBody,
+  required final Color background,
+  required final Color card,
+  required final Color text,
+  required final Color textBody,
 }) {
   return ThemeData(
     useMaterial3: true,
