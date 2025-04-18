@@ -4,7 +4,9 @@ import 'package:dio/dio.dart';
 class HttpLoggingInterceptor extends Interceptor {
   @override
   void onResponse(
-      final Response response, final ResponseInterceptorHandler handler) {
+    final Response response,
+    final ResponseInterceptorHandler handler,
+  ) {
     final request = response.requestOptions;
     Logging.info(
       '${response.statusCode} - ${request.method} ${request.uri}',

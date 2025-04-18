@@ -4,7 +4,7 @@ part 'generated/user.freezed.dart';
 part 'generated/user.g.dart';
 
 @freezed
-class User with _$User {
+sealed class User with _$User {
   const factory User({
     required final int id,
     required final String name,

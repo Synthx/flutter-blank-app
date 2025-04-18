@@ -24,7 +24,10 @@ class StoreObserver extends BlocObserver {
 
   @override
   void onError(
-      final BlocBase bloc, final Object error, final StackTrace stackTrace) {
+    final BlocBase bloc,
+    final Object error,
+    final StackTrace stackTrace,
+  ) {
     Logging.severe(
       'Error encountered',
       name: bloc.runtimeType.toString(),

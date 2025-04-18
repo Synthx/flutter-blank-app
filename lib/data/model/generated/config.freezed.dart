@@ -1,3 +1,4 @@
+// dart format width=80
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
@@ -9,169 +10,142 @@ part of '../config.dart';
 // FreezedGenerator
 // **************************************************************************
 
+// dart format off
 T _$identity<T>(T value) => value;
-
-final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
-
-Config _$ConfigFromJson(Map<String, dynamic> json) {
-  return _Config.fromJson(json);
-}
 
 /// @nodoc
 mixin _$Config {
-  Env get env => throw _privateConstructorUsedError;
-  String get apiUrl => throw _privateConstructorUsedError;
+
+ Env get env; String get apiUrl;
+/// Create a copy of Config
+/// with the given fields replaced by the non-null parameter values.
+@JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$ConfigCopyWith<Config> get copyWith => _$ConfigCopyWithImpl<Config>(this as Config, _$identity);
 
   /// Serializes this Config to a JSON map.
-  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+  Map<String, dynamic> toJson();
 
-  /// Create a copy of Config
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  $ConfigCopyWith<Config> get copyWith => throw _privateConstructorUsedError;
+
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is Config&&(identical(other.env, env) || other.env == env)&&(identical(other.apiUrl, apiUrl) || other.apiUrl == apiUrl));
+}
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,env,apiUrl);
+
+@override
+String toString() {
+  return 'Config(env: $env, apiUrl: $apiUrl)';
+}
+
+
 }
 
 /// @nodoc
-abstract class $ConfigCopyWith<$Res> {
-  factory $ConfigCopyWith(Config value, $Res Function(Config) then) =
-      _$ConfigCopyWithImpl<$Res, Config>;
-  @useResult
-  $Res call({Env env, String apiUrl});
-}
+abstract mixin class $ConfigCopyWith<$Res>  {
+  factory $ConfigCopyWith(Config value, $Res Function(Config) _then) = _$ConfigCopyWithImpl;
+@useResult
+$Res call({
+ Env env, String apiUrl
+});
 
+
+
+
+}
 /// @nodoc
-class _$ConfigCopyWithImpl<$Res, $Val extends Config>
+class _$ConfigCopyWithImpl<$Res>
     implements $ConfigCopyWith<$Res> {
-  _$ConfigCopyWithImpl(this._value, this._then);
+  _$ConfigCopyWithImpl(this._self, this._then);
 
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
+  final Config _self;
+  final $Res Function(Config) _then;
 
-  /// Create a copy of Config
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? env = null,
-    Object? apiUrl = null,
-  }) {
-    return _then(_value.copyWith(
-      env: null == env
-          ? _value.env
-          : env // ignore: cast_nullable_to_non_nullable
-              as Env,
-      apiUrl: null == apiUrl
-          ? _value.apiUrl
-          : apiUrl // ignore: cast_nullable_to_non_nullable
-              as String,
-    ) as $Val);
-  }
+/// Create a copy of Config
+/// with the given fields replaced by the non-null parameter values.
+@pragma('vm:prefer-inline') @override $Res call({Object? env = null,Object? apiUrl = null,}) {
+  return _then(_self.copyWith(
+env: null == env ? _self.env : env // ignore: cast_nullable_to_non_nullable
+as Env,apiUrl: null == apiUrl ? _self.apiUrl : apiUrl // ignore: cast_nullable_to_non_nullable
+as String,
+  ));
 }
 
-/// @nodoc
-abstract class _$$ConfigImplCopyWith<$Res> implements $ConfigCopyWith<$Res> {
-  factory _$$ConfigImplCopyWith(
-          _$ConfigImpl value, $Res Function(_$ConfigImpl) then) =
-      __$$ConfigImplCopyWithImpl<$Res>;
-  @override
-  @useResult
-  $Res call({Env env, String apiUrl});
 }
 
-/// @nodoc
-class __$$ConfigImplCopyWithImpl<$Res>
-    extends _$ConfigCopyWithImpl<$Res, _$ConfigImpl>
-    implements _$$ConfigImplCopyWith<$Res> {
-  __$$ConfigImplCopyWithImpl(
-      _$ConfigImpl _value, $Res Function(_$ConfigImpl) _then)
-      : super(_value, _then);
-
-  /// Create a copy of Config
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? env = null,
-    Object? apiUrl = null,
-  }) {
-    return _then(_$ConfigImpl(
-      env: null == env
-          ? _value.env
-          : env // ignore: cast_nullable_to_non_nullable
-              as Env,
-      apiUrl: null == apiUrl
-          ? _value.apiUrl
-          : apiUrl // ignore: cast_nullable_to_non_nullable
-              as String,
-    ));
-  }
-}
 
 /// @nodoc
 @JsonSerializable()
-class _$ConfigImpl implements _Config {
-  const _$ConfigImpl({required this.env, required this.apiUrl});
 
-  factory _$ConfigImpl.fromJson(Map<String, dynamic> json) =>
-      _$$ConfigImplFromJson(json);
+class _Config implements Config {
+  const _Config({required this.env, required this.apiUrl});
+  factory _Config.fromJson(Map<String, dynamic> json) => _$ConfigFromJson(json);
 
-  @override
-  final Env env;
-  @override
-  final String apiUrl;
+@override final  Env env;
+@override final  String apiUrl;
 
-  @override
-  String toString() {
-    return 'Config(env: $env, apiUrl: $apiUrl)';
-  }
+/// Create a copy of Config
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+_$ConfigCopyWith<_Config> get copyWith => __$ConfigCopyWithImpl<_Config>(this, _$identity);
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$ConfigImpl &&
-            (identical(other.env, env) || other.env == env) &&
-            (identical(other.apiUrl, apiUrl) || other.apiUrl == apiUrl));
-  }
-
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  int get hashCode => Object.hash(runtimeType, env, apiUrl);
-
-  /// Create a copy of Config
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$ConfigImplCopyWith<_$ConfigImpl> get copyWith =>
-      __$$ConfigImplCopyWithImpl<_$ConfigImpl>(this, _$identity);
-
-  @override
-  Map<String, dynamic> toJson() {
-    return _$$ConfigImplToJson(
-      this,
-    );
-  }
+@override
+Map<String, dynamic> toJson() {
+  return _$ConfigToJson(this, );
 }
 
-abstract class _Config implements Config {
-  const factory _Config(
-      {required final Env env, required final String apiUrl}) = _$ConfigImpl;
-
-  factory _Config.fromJson(Map<String, dynamic> json) = _$ConfigImpl.fromJson;
-
-  @override
-  Env get env;
-  @override
-  String get apiUrl;
-
-  /// Create a copy of Config
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$ConfigImplCopyWith<_$ConfigImpl> get copyWith =>
-      throw _privateConstructorUsedError;
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is _Config&&(identical(other.env, env) || other.env == env)&&(identical(other.apiUrl, apiUrl) || other.apiUrl == apiUrl));
 }
+
+@JsonKey(includeFromJson: false, includeToJson: false)
+@override
+int get hashCode => Object.hash(runtimeType,env,apiUrl);
+
+@override
+String toString() {
+  return 'Config(env: $env, apiUrl: $apiUrl)';
+}
+
+
+}
+
+/// @nodoc
+abstract mixin class _$ConfigCopyWith<$Res> implements $ConfigCopyWith<$Res> {
+  factory _$ConfigCopyWith(_Config value, $Res Function(_Config) _then) = __$ConfigCopyWithImpl;
+@override @useResult
+$Res call({
+ Env env, String apiUrl
+});
+
+
+
+
+}
+/// @nodoc
+class __$ConfigCopyWithImpl<$Res>
+    implements _$ConfigCopyWith<$Res> {
+  __$ConfigCopyWithImpl(this._self, this._then);
+
+  final _Config _self;
+  final $Res Function(_Config) _then;
+
+/// Create a copy of Config
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? env = null,Object? apiUrl = null,}) {
+  return _then(_Config(
+env: null == env ? _self.env : env // ignore: cast_nullable_to_non_nullable
+as Env,apiUrl: null == apiUrl ? _self.apiUrl : apiUrl // ignore: cast_nullable_to_non_nullable
+as String,
+  ));
+}
+
+
+}
+
+// dart format on

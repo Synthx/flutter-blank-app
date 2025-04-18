@@ -4,9 +4,7 @@ import 'package:dio/dio.dart';
 class HttpTokenInterceptor extends Interceptor {
   final AuthService authService;
 
-  HttpTokenInterceptor({
-    required this.authService,
-  });
+  HttpTokenInterceptor({required this.authService});
 
   @override
   Future<void> onRequest(

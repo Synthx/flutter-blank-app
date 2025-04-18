@@ -4,9 +4,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 class SplashStore extends Cubit<bool> {
   final AuthStore authStore;
 
-  SplashStore({
-    required this.authStore,
-  }) : super(true);
+  SplashStore({required this.authStore}) : super(true);
 
   Future init() async {
     try {

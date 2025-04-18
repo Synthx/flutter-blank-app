@@ -3,10 +3,7 @@ import 'dart:developer' as developer;
 import 'package:blank_app/core/core.dart';
 
 class Logging {
-  static void info(
-    final String message, {
-    final String name = '',
-  }) {
+  static void info(final String message, {final String name = ''}) {
     developer.log(
       message,
       name: name,

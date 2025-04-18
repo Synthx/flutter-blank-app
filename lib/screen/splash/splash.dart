@@ -7,17 +7,12 @@ import 'splash_store.dart';
 class Splash extends StatelessWidget {
   final Widget child;
 
-  const Splash({
-    required this.child,
-    super.key,
-  });
+  const Splash({required this.child, super.key});
 
   @override
   Widget build(final BuildContext context) {
     return BlocProvider(
-      create: (final context) => SplashStore(
-        authStore: context.read(),
-      )..init(),
+      create: (final context) => SplashStore(authStore: context.read())..init(),
       child: BlocSelector<SplashStore, bool, bool>(
         selector: (final state) => state,
         builder: (final context, final isLoading) {

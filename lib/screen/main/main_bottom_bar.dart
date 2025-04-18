@@ -5,10 +5,7 @@ import 'package:go_router/go_router.dart';
 class MainBottomBar extends StatelessWidget {
   final StatefulNavigationShell navigationShell;
 
-  const MainBottomBar({
-    required this.navigationShell,
-    super.key,
-  });
+  const MainBottomBar({required this.navigationShell, super.key});
 
   void _onTap(final int index) {
     navigationShell.goBranch(

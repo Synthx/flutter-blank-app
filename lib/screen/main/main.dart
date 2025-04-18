@@ -12,21 +12,14 @@ export 'home/home.dart';
 class MainScreen extends StatelessWidget {
   final StatefulNavigationShell navigationShell;
 
-  const MainScreen({
-    required this.navigationShell,
-    super.key,
-  });
+  const MainScreen({required this.navigationShell, super.key});
 
   @override
   Widget build(final BuildContext context) {
     return BlocProvider(
-      create: (final context) => MainStore(
-        userService: getIt(),
-      ),
+      create: (final context) => MainStore(userService: getIt()),
       child: Scaffold(
-        bottomNavigationBar: MainBottomBar(
-          navigationShell: navigationShell,
-        ),
+        bottomNavigationBar: MainBottomBar(navigationShell: navigationShell),
         body: navigationShell,
       ),
     );

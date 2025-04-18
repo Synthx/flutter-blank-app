@@ -29,10 +29,7 @@ ThemeData createThemeData({
     ),
     tabBarTheme: TabBarTheme(
       labelColor: text,
-      labelStyle: const TextStyle(
-        fontSize: 12,
-        fontWeight: FontWeight.w700,
-      ),
+      labelStyle: const TextStyle(fontSize: 12, fontWeight: FontWeight.w700),
       unselectedLabelColor: textBody,
       unselectedLabelStyle: const TextStyle(
         fontSize: 12,
@@ -40,10 +37,7 @@ ThemeData createThemeData({
       ),
       indicator: const UnderlineTabIndicator(
         borderRadius: BorderRadius.zero,
-        borderSide: BorderSide(
-          color: kPrimaryColor,
-          width: 2,
-        ),
+        borderSide: BorderSide(color: kPrimaryColor, width: 2),
       ),
       indicatorColor: kPrimaryColor,
       indicatorSize: TabBarIndicatorSize.label,
@@ -56,25 +50,14 @@ ThemeData createThemeData({
       showSelectedLabels: false,
       showUnselectedLabels: false,
     ),
-    iconTheme: IconThemeData(
-      color: text,
-    ),
-    dividerTheme: DividerThemeData(
-      color: textBody,
-      thickness: 2,
-      space: 0,
-    ),
+    iconTheme: IconThemeData(color: text),
+    dividerTheme: DividerThemeData(color: textBody, thickness: 2, space: 0),
     elevatedButtonTheme: ElevatedButtonThemeData(
       style: ElevatedButton.styleFrom(
         backgroundColor: kPrimaryColor,
         foregroundColor: Colors.white,
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(8),
-        ),
-        textStyle: const TextStyle(
-          fontSize: 15,
-          fontWeight: FontWeight.w700,
-        ),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
+        textStyle: const TextStyle(fontSize: 15, fontWeight: FontWeight.w700),
       ),
     ),
     textButtonTheme: TextButtonThemeData(
@@ -100,14 +83,8 @@ ThemeData createThemeData({
         fontWeight: FontWeight.w500,
         color: text,
       ),
-      bodyMedium: TextStyle(
-        fontSize: 15,
-        color: textBody,
-      ),
-      bodySmall: TextStyle(
-        fontSize: 13,
-        color: textBody,
-      ),
+      bodyMedium: TextStyle(fontSize: 15, color: textBody),
+      bodySmall: TextStyle(fontSize: 13, color: textBody),
     ),
   );
 }

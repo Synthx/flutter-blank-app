@@ -10,9 +10,7 @@ class HomeScreen extends StatelessWidget {
     final now = DateTime.now();
 
     return Scaffold(
-      appBar: AppBar(
-        title: Text(context.t.navigationHome),
-      ),
+      appBar: AppBar(title: Text(context.t.navigationHome)),
       body: Padding(
         padding: const EdgeInsets.all(kSafeArea),
         child: Column(
@@ -21,10 +19,7 @@ class HomeScreen extends StatelessWidget {
           children: [
             SizedBox(
               height: 150,
-              child: Image.asset(
-                'assets/bird.png',
-                fit: BoxFit.contain,
-              ),
+              child: Image.asset('assets/bird.png', fit: BoxFit.contain),
             ),
             Text(context.t.homeTitle('Paul')),
             Text(context.t.homeDate(now)),

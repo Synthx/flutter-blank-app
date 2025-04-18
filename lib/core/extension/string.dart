@@ -6,9 +6,9 @@ extension StringExtension on String {
   }
 
   String toTitleCase() {
-    return replaceAll(RegExp(' +'), ' ')
-        .split(' ')
-        .map((final str) => str.toCapitalized())
-        .join(' ');
+    return replaceAll(
+      RegExp(' +'),
+      ' ',
+    ).split(' ').map((final str) => str.toCapitalized()).join(' ');
   }
 }

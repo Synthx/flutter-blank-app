@@ -5,8 +5,6 @@ class SplashScreen extends StatelessWidget {
 
   @override
   Widget build(final BuildContext context) {
-    return const Scaffold(
-      body: Placeholder(),
-    );
+    return const Scaffold(body: Placeholder());
   }
 }

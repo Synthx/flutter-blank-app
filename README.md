@@ -93,7 +93,7 @@ import 'package:freezed_annotation/freezed_annotation.dart';
 part 'generated/$FILE_NAME$.freezed.dart';
 
 @freezed
-class $NAME$ with _$$$NAME$ {
+sealed class $NAME$ with _$$$NAME$ {
   const factory $NAME$({
     $END$
   }) = _$NAME$;
@@ -109,7 +109,7 @@ part 'generated/$FILE_NAME$.freezed.dart';
 part 'generated/$FILE_NAME$.g.dart';
 
 @freezed
-class $NAME$ with _$$$NAME$ {
+sealed class $NAME$ with _$$$NAME$ {
   const factory $NAME$({
     $END$
   }) = _$NAME$;

@@ -24,9 +24,7 @@ class CounterScreen extends StatelessWidget {
   @override
   Widget build(final BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(context.t.navigationCounter),
-      ),
+      appBar: AppBar(title: Text(context.t.navigationCounter)),
       body: Padding(
         padding: const EdgeInsets.all(kSafeArea),
         child: Column(

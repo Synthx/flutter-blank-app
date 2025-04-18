@@ -1,3 +1,4 @@
+// dart format width=80
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
@@ -9,134 +10,133 @@ part of '../auth_state.dart';
 // FreezedGenerator
 // **************************************************************************
 
+// dart format off
 T _$identity<T>(T value) => value;
-
-final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
-
 /// @nodoc
 mixin _$AuthState {
-  String? get userId => throw _privateConstructorUsedError;
 
-  /// Create a copy of AuthState
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  $AuthStateCopyWith<AuthState> get copyWith =>
-      throw _privateConstructorUsedError;
+ String? get userId;
+/// Create a copy of AuthState
+/// with the given fields replaced by the non-null parameter values.
+@JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$AuthStateCopyWith<AuthState> get copyWith => _$AuthStateCopyWithImpl<AuthState>(this as AuthState, _$identity);
+
+
+
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is AuthState&&(identical(other.userId, userId) || other.userId == userId));
+}
+
+
+@override
+int get hashCode => Object.hash(runtimeType,userId);
+
+@override
+String toString() {
+  return 'AuthState(userId: $userId)';
+}
+
+
 }
 
 /// @nodoc
-abstract class $AuthStateCopyWith<$Res> {
-  factory $AuthStateCopyWith(AuthState value, $Res Function(AuthState) then) =
-      _$AuthStateCopyWithImpl<$Res, AuthState>;
-  @useResult
-  $Res call({String? userId});
-}
+abstract mixin class $AuthStateCopyWith<$Res>  {
+  factory $AuthStateCopyWith(AuthState value, $Res Function(AuthState) _then) = _$AuthStateCopyWithImpl;
+@useResult
+$Res call({
+ String? userId
+});
 
+
+
+
+}
 /// @nodoc
-class _$AuthStateCopyWithImpl<$Res, $Val extends AuthState>
+class _$AuthStateCopyWithImpl<$Res>
     implements $AuthStateCopyWith<$Res> {
-  _$AuthStateCopyWithImpl(this._value, this._then);
+  _$AuthStateCopyWithImpl(this._self, this._then);
 
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
+  final AuthState _self;
+  final $Res Function(AuthState) _then;
 
-  /// Create a copy of AuthState
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? userId = freezed,
-  }) {
-    return _then(_value.copyWith(
-      userId: freezed == userId
-          ? _value.userId
-          : userId // ignore: cast_nullable_to_non_nullable
-              as String?,
-    ) as $Val);
-  }
+/// Create a copy of AuthState
+/// with the given fields replaced by the non-null parameter values.
+@pragma('vm:prefer-inline') @override $Res call({Object? userId = freezed,}) {
+  return _then(_self.copyWith(
+userId: freezed == userId ? _self.userId : userId // ignore: cast_nullable_to_non_nullable
+as String?,
+  ));
 }
 
-/// @nodoc
-abstract class _$$AuthStateImplCopyWith<$Res>
-    implements $AuthStateCopyWith<$Res> {
-  factory _$$AuthStateImplCopyWith(
-          _$AuthStateImpl value, $Res Function(_$AuthStateImpl) then) =
-      __$$AuthStateImplCopyWithImpl<$Res>;
-  @override
-  @useResult
-  $Res call({String? userId});
 }
 
-/// @nodoc
-class __$$AuthStateImplCopyWithImpl<$Res>
-    extends _$AuthStateCopyWithImpl<$Res, _$AuthStateImpl>
-    implements _$$AuthStateImplCopyWith<$Res> {
-  __$$AuthStateImplCopyWithImpl(
-      _$AuthStateImpl _value, $Res Function(_$AuthStateImpl) _then)
-      : super(_value, _then);
-
-  /// Create a copy of AuthState
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? userId = freezed,
-  }) {
-    return _then(_$AuthStateImpl(
-      userId: freezed == userId
-          ? _value.userId
-          : userId // ignore: cast_nullable_to_non_nullable
-              as String?,
-    ));
-  }
-}
 
 /// @nodoc
 
-class _$AuthStateImpl implements _AuthState {
-  const _$AuthStateImpl({this.userId});
 
-  @override
-  final String? userId;
+class _AuthState implements AuthState {
+  const _AuthState({this.userId});
+  
 
-  @override
-  String toString() {
-    return 'AuthState(userId: $userId)';
-  }
+@override final  String? userId;
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$AuthStateImpl &&
-            (identical(other.userId, userId) || other.userId == userId));
-  }
+/// Create a copy of AuthState
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+_$AuthStateCopyWith<_AuthState> get copyWith => __$AuthStateCopyWithImpl<_AuthState>(this, _$identity);
 
-  @override
-  int get hashCode => Object.hash(runtimeType, userId);
 
-  /// Create a copy of AuthState
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$AuthStateImplCopyWith<_$AuthStateImpl> get copyWith =>
-      __$$AuthStateImplCopyWithImpl<_$AuthStateImpl>(this, _$identity);
+
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is _AuthState&&(identical(other.userId, userId) || other.userId == userId));
 }
 
-abstract class _AuthState implements AuthState {
-  const factory _AuthState({final String? userId}) = _$AuthStateImpl;
 
-  @override
-  String? get userId;
+@override
+int get hashCode => Object.hash(runtimeType,userId);
 
-  /// Create a copy of AuthState
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$AuthStateImplCopyWith<_$AuthStateImpl> get copyWith =>
-      throw _privateConstructorUsedError;
+@override
+String toString() {
+  return 'AuthState(userId: $userId)';
 }
+
+
+}
+
+/// @nodoc
+abstract mixin class _$AuthStateCopyWith<$Res> implements $AuthStateCopyWith<$Res> {
+  factory _$AuthStateCopyWith(_AuthState value, $Res Function(_AuthState) _then) = __$AuthStateCopyWithImpl;
+@override @useResult
+$Res call({
+ String? userId
+});
+
+
+
+
+}
+/// @nodoc
+class __$AuthStateCopyWithImpl<$Res>
+    implements _$AuthStateCopyWith<$Res> {
+  __$AuthStateCopyWithImpl(this._self, this._then);
+
+  final _AuthState _self;
+  final $Res Function(_AuthState) _then;
+
+/// Create a copy of AuthState
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? userId = freezed,}) {
+  return _then(_AuthState(
+userId: freezed == userId ? _self.userId : userId // ignore: cast_nullable_to_non_nullable
+as String?,
+  ));
+}
+
+
+}
+
+// dart format on

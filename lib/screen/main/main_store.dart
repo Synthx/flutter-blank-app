@@ -6,9 +6,7 @@ import 'main_state.dart';
 class MainStore extends Cubit<MainState> {
   final UserService userService;
 
-  MainStore({
-    required this.userService,
-  }) : super(initialMainState);
+  MainStore({required this.userService}) : super(initialMainState);
 
   Future load() async {
     emit(state.copyWith(isLoading: true));

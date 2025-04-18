@@ -1,3 +1,4 @@
+// dart format width=80
 // coverage:ignore-file
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: type=lint
@@ -9,153 +10,136 @@ part of '../main_state.dart';
 // FreezedGenerator
 // **************************************************************************
 
+// dart format off
 T _$identity<T>(T value) => value;
-
-final _privateConstructorUsedError = UnsupportedError(
-    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
-
 /// @nodoc
 mixin _$MainState {
-  bool get isLoading => throw _privateConstructorUsedError;
-  int get count => throw _privateConstructorUsedError;
 
-  /// Create a copy of MainState
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  $MainStateCopyWith<MainState> get copyWith =>
-      throw _privateConstructorUsedError;
+ bool get isLoading; int get count;
+/// Create a copy of MainState
+/// with the given fields replaced by the non-null parameter values.
+@JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+$MainStateCopyWith<MainState> get copyWith => _$MainStateCopyWithImpl<MainState>(this as MainState, _$identity);
+
+
+
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is MainState&&(identical(other.isLoading, isLoading) || other.isLoading == isLoading)&&(identical(other.count, count) || other.count == count));
+}
+
+
+@override
+int get hashCode => Object.hash(runtimeType,isLoading,count);
+
+@override
+String toString() {
+  return 'MainState(isLoading: $isLoading, count: $count)';
+}
+
+
 }
 
 /// @nodoc
-abstract class $MainStateCopyWith<$Res> {
-  factory $MainStateCopyWith(MainState value, $Res Function(MainState) then) =
-      _$MainStateCopyWithImpl<$Res, MainState>;
-  @useResult
-  $Res call({bool isLoading, int count});
-}
+abstract mixin class $MainStateCopyWith<$Res>  {
+  factory $MainStateCopyWith(MainState value, $Res Function(MainState) _then) = _$MainStateCopyWithImpl;
+@useResult
+$Res call({
+ bool isLoading, int count
+});
 
+
+
+
+}
 /// @nodoc
-class _$MainStateCopyWithImpl<$Res, $Val extends MainState>
+class _$MainStateCopyWithImpl<$Res>
     implements $MainStateCopyWith<$Res> {
-  _$MainStateCopyWithImpl(this._value, this._then);
+  _$MainStateCopyWithImpl(this._self, this._then);
 
-  // ignore: unused_field
-  final $Val _value;
-  // ignore: unused_field
-  final $Res Function($Val) _then;
+  final MainState _self;
+  final $Res Function(MainState) _then;
 
-  /// Create a copy of MainState
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? isLoading = null,
-    Object? count = null,
-  }) {
-    return _then(_value.copyWith(
-      isLoading: null == isLoading
-          ? _value.isLoading
-          : isLoading // ignore: cast_nullable_to_non_nullable
-              as bool,
-      count: null == count
-          ? _value.count
-          : count // ignore: cast_nullable_to_non_nullable
-              as int,
-    ) as $Val);
-  }
+/// Create a copy of MainState
+/// with the given fields replaced by the non-null parameter values.
+@pragma('vm:prefer-inline') @override $Res call({Object? isLoading = null,Object? count = null,}) {
+  return _then(_self.copyWith(
+isLoading: null == isLoading ? _self.isLoading : isLoading // ignore: cast_nullable_to_non_nullable
+as bool,count: null == count ? _self.count : count // ignore: cast_nullable_to_non_nullable
+as int,
+  ));
 }
 
-/// @nodoc
-abstract class _$$MainStateImplCopyWith<$Res>
-    implements $MainStateCopyWith<$Res> {
-  factory _$$MainStateImplCopyWith(
-          _$MainStateImpl value, $Res Function(_$MainStateImpl) then) =
-      __$$MainStateImplCopyWithImpl<$Res>;
-  @override
-  @useResult
-  $Res call({bool isLoading, int count});
 }
 
-/// @nodoc
-class __$$MainStateImplCopyWithImpl<$Res>
-    extends _$MainStateCopyWithImpl<$Res, _$MainStateImpl>
-    implements _$$MainStateImplCopyWith<$Res> {
-  __$$MainStateImplCopyWithImpl(
-      _$MainStateImpl _value, $Res Function(_$MainStateImpl) _then)
-      : super(_value, _then);
-
-  /// Create a copy of MainState
-  /// with the given fields replaced by the non-null parameter values.
-  @pragma('vm:prefer-inline')
-  @override
-  $Res call({
-    Object? isLoading = null,
-    Object? count = null,
-  }) {
-    return _then(_$MainStateImpl(
-      isLoading: null == isLoading
-          ? _value.isLoading
-          : isLoading // ignore: cast_nullable_to_non_nullable
-              as bool,
-      count: null == count
-          ? _value.count
-          : count // ignore: cast_nullable_to_non_nullable
-              as int,
-    ));
-  }
-}
 
 /// @nodoc
 
-class _$MainStateImpl implements _MainState {
-  const _$MainStateImpl({required this.isLoading, required this.count});
 
-  @override
-  final bool isLoading;
-  @override
-  final int count;
+class _MainState implements MainState {
+  const _MainState({required this.isLoading, required this.count});
+  
 
-  @override
-  String toString() {
-    return 'MainState(isLoading: $isLoading, count: $count)';
-  }
+@override final  bool isLoading;
+@override final  int count;
 
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType &&
-            other is _$MainStateImpl &&
-            (identical(other.isLoading, isLoading) ||
-                other.isLoading == isLoading) &&
-            (identical(other.count, count) || other.count == count));
-  }
+/// Create a copy of MainState
+/// with the given fields replaced by the non-null parameter values.
+@override @JsonKey(includeFromJson: false, includeToJson: false)
+@pragma('vm:prefer-inline')
+_$MainStateCopyWith<_MainState> get copyWith => __$MainStateCopyWithImpl<_MainState>(this, _$identity);
 
-  @override
-  int get hashCode => Object.hash(runtimeType, isLoading, count);
 
-  /// Create a copy of MainState
-  /// with the given fields replaced by the non-null parameter values.
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  @override
-  @pragma('vm:prefer-inline')
-  _$$MainStateImplCopyWith<_$MainStateImpl> get copyWith =>
-      __$$MainStateImplCopyWithImpl<_$MainStateImpl>(this, _$identity);
+
+@override
+bool operator ==(Object other) {
+  return identical(this, other) || (other.runtimeType == runtimeType&&other is _MainState&&(identical(other.isLoading, isLoading) || other.isLoading == isLoading)&&(identical(other.count, count) || other.count == count));
 }
 
-abstract class _MainState implements MainState {
-  const factory _MainState(
-      {required final bool isLoading,
-      required final int count}) = _$MainStateImpl;
 
-  @override
-  bool get isLoading;
-  @override
-  int get count;
+@override
+int get hashCode => Object.hash(runtimeType,isLoading,count);
 
-  /// Create a copy of MainState
-  /// with the given fields replaced by the non-null parameter values.
-  @override
-  @JsonKey(includeFromJson: false, includeToJson: false)
-  _$$MainStateImplCopyWith<_$MainStateImpl> get copyWith =>
-      throw _privateConstructorUsedError;
+@override
+String toString() {
+  return 'MainState(isLoading: $isLoading, count: $count)';
 }
+
+
+}
+
+/// @nodoc
+abstract mixin class _$MainStateCopyWith<$Res> implements $MainStateCopyWith<$Res> {
+  factory _$MainStateCopyWith(_MainState value, $Res Function(_MainState) _then) = __$MainStateCopyWithImpl;
+@override @useResult
+$Res call({
+ bool isLoading, int count
+});
+
+
+
+
+}
+/// @nodoc
+class __$MainStateCopyWithImpl<$Res>
+    implements _$MainStateCopyWith<$Res> {
+  __$MainStateCopyWithImpl(this._self, this._then);
+
+  final _MainState _self;
+  final $Res Function(_MainState) _then;
+
+/// Create a copy of MainState
+/// with the given fields replaced by the non-null parameter values.
+@override @pragma('vm:prefer-inline') $Res call({Object? isLoading = null,Object? count = null,}) {
+  return _then(_MainState(
+isLoading: null == isLoading ? _self.isLoading : isLoading // ignore: cast_nullable_to_non_nullable
+as bool,count: null == count ? _self.count : count // ignore: cast_nullable_to_non_nullable
+as int,
+  ));
+}
+
+
+}
+
+// dart format on
