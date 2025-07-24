@@ -1,9 +1,9 @@
+import 'package:blank_app/l10n/app_localizations.dart';
 import 'package:blank_app/screen/screen.dart';
 import 'package:blank_app/store/store.dart';
 import 'package:blank_app/theme/theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class BlankApp extends StatelessWidget {
   const BlankApp({super.key});

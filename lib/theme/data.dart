@@ -27,7 +27,7 @@ ThemeData createThemeData({
         color: text,
       ),
     ),
-    tabBarTheme: TabBarTheme(
+    tabBarTheme: TabBarThemeData(
       labelColor: text,
       labelStyle: const TextStyle(fontSize: 12, fontWeight: FontWeight.w700),
       unselectedLabelColor: textBody,

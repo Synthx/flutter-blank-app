@@ -5,11 +5,11 @@ extension DateTimeExtension on DateTime {
     return DateFormat(format).format(this);
   }
 
-  get startOfDay {
+  DateTime get startOfDay {
     return DateTime(year, month, day);
   }
 
-  get endOfDay {
+  DateTime get endOfDay {
     return DateTime(year, month, day, 23, 59, 59);
   }
 }
